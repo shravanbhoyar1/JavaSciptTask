@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-   
-}
+
 html,body{
     display: grid;
     height: 100%;
@@ -13,4 +9,14 @@ html,body{
     width:400px;
     background: #fff;
     border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0);
+}
+.title{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 80px;
+    background: linear-gradient(-135deg,#c850c0, #4158d0);
+    border-radius: 13px 13px 0px 0px;
+    text-align: center;
+    padding: 10px;
 }
