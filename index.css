@@ -35,12 +35,41 @@ html,body{
     padding-left: 20px;
     border-radius: 25px;
     outline: none;
+    font-size: 17px;
     border: 1px solid lightgray;
+    transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+.wrapper form .field input:valid{
+    border-color: #4158d0;
 }
 .wrapper form .field label{
     position: absolute;
     top: 50%;
     left: 20px;
+    font-size: 17px;
+    color: #999;
     transform: translateY(-50%);
     pointer-events: none;
+    transition: all 0.3s ease;
+}
+.wrapper form .field input:focus ~ label,
+.wrapper form .field input:valid ~ label{
+    top: 0%;
+    color: #4158d0;
+    font-size: 16px;
+    background: #fff;
+    transform: translateY(-50%);
+}
+.wrapper form .pass-link{
+    color: #4158d0;
+    margin: 5px 0px 0px 10px;
+}
+.div{
+
+height: 30px;
+width: 56px;
+background-color: #999;
+border-radius: 4px;
+
 }
