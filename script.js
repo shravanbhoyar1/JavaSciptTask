@@ -1,14 +1,9 @@
+let btn = document.querySelector(".task-1");
+let p = document.querySelector("p");
 
-let button= document.querySelector(".btn");
-button.addEventListener("mouseover", function(){
-
-    button.classList.add("div");
-    
-});
-let button1= document.querySelector(".btn");
-button.addEventListener("mouseleave", function(){
-
-    button.classList.add("div");
-    button.textContent= "so cool"
-    
-});
+btn.addEventListener("click",function(){
+p.textContent = "hii Shravan";
+p.style.color = "skyblue";
+p.style.fontSize = "45px";
+console.log("hiii");
+})
