@@ -81,3 +81,21 @@ removebtn.addEventListener("click",function(){
    stop.addEventListener("click", function(){
         clearInterval(int);
   })
+
+  /* Task-6 increase decrease button*/
+        let inc = document.querySelector("#increase");
+        let dec = document.querySelector("#decrease");
+        let h2 = document.querySelector("h2");
+        
+
+        inc.addEventListener("click", function() {
+            count++;
+            h2.textContent = count;
+        });
+
+        dec.addEventListener("click", function() {
+            if (count > 0) {
+                count--;
+                h2.textContent = count;
+            }
+        });
