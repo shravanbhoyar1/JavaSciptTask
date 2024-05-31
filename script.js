@@ -99,3 +99,38 @@ removebtn.addEventListener("click",function(){
                 h2.textContent = count;
             }
         });
+
+        
+  /* Task-7 */
+
+        let home = document.querySelector("#home");
+        let contact = document.querySelector("#contact");
+        let about = document.querySelector("#about");
+        let hometext = document.querySelector("#hometext");
+        let contacttext = document.querySelector("#contacttext");
+        let abouttext = document.querySelector("#abouttext");
+
+       hometext.style.display = "block";
+       hometext.style.width= "50%"; 
+
+       home.addEventListener("click", function(){
+        removeAllText()
+        hometext.style.display = "block";
+        hometext.style.width= "50%"; 
+       })
+       about.addEventListener("click", function(){
+        removeAllText()
+        abouttext.style.display = "block";
+        abouttext.style.width= "50%"; 
+       })
+       contact.addEventListener("click", function(){
+        removeAllText()
+        contacttext.style.display = "block";
+        contacttext.style.width= "50%"; 
+       })
+
+       function removeAllText(){
+        document.querySelectorAll(".text").forEach(function(text){
+          text.style.display = "none";
+        })
+       }
